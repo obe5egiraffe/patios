@@ -1,0 +1,110 @@
+.App {
+
+}
+
+/*HEADER*/
+header{
+  background:#f6416c;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  width:100%;
+  padding:1em;
+}
+header h1{
+  margin:0;
+}
+header p{
+  font-size:2em;
+  margin:0;
+}
+
+/*WRAP*/
+
+/*SINGLE*/
+.pub-single{
+  background:#fff;
+  margin:1em;
+  border-radius:3px;
+  position:relative;
+}
+.pub-single.happy{
+  border:5px solid #ffde7d;
+}
+
+.pub-single .drinks{
+  display:none;
+  position:absolute;
+  right:0;
+  top:0;
+  background:#ffde7d;
+  color:#fff;
+  margin:0;
+  padding:0.25em;
+  width:3em;
+  height:3em;
+  border-radius:0 0 0 3px;
+}
+.pub-single.happy .drinks{
+  display:block;
+}
+
+.pub-single .content{
+  padding:1em 6em 0 1em;
+}
+.pub-single .content h2{
+  margin:0;
+}
+
+.pub-single .content h2 span{
+  font-size:0.8em;
+  color:#AAAAAA;
+  font-weight:normal;
+  margin-left:0.5em;
+}
+.pub-single .content span.open{
+  color:#96c296;
+  font-weight:bold;
+}
+.pub-single .content span.closed{
+  color:#ce5a5a;
+  font-weight:bold;
+}
+
+/*SPECIALS*/
+
+.specials-btn{
+  background:#00b8a9;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.25em 1em;
+  cursor:pointer;
+}
+.specials-btn:hover{
+  background:#019f92;
+}
+.specials-btn p{
+  color:#fff;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin:0;
+}
+.specials-btn p.plus{
+  font-size:1.5em;
+}
+
+.specials-wrap{
+  height:auto;
+  max-height:0;
+  overflow:hidden;
+  padding:0 1em;
+  background:#00b8a945;
+  transition:0.5s;
+}
+
+.specials-wrap.open{
+  max-height:9999px;
+  transition:0.5s;
+}
